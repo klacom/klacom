@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
-  <title id="title">klacom — web, mobile, and games</title>
+  <title id="title">klacom — full-stack developer building for web, mobile, and games</title>
   <desc id="desc">A handcrafted pixel landscape with drifting clouds, a grassy hill, a crystal cave, and Klarenz's pixel avatar. Inspired by his interactive portfolio.</desc>
   <defs>
     <linearGradient id="sky" x2="0" y2="1">
@@ -92,7 +92,7 @@
     <text x="56" y="64" fill="#a8d1cc" font-size="17" letter-spacing="3">KLARENZ COBIE MANRIQUE</text>
     <text x="56" y="164" fill="#101d2b" font-size="92" font-weight="700" letter-spacing="-4">klacom</text>
     <text x="52" y="158" fill="#f2edd9" font-size="92" font-weight="700" letter-spacing="-4">klacom</text>
-    <text x="56" y="208" fill="#cce0dd" font-size="24">Web, mobile &amp; games.</text>
+    <text x="56" y="208" fill="#cce0dd" font-size="24">Full-stack · web, mobile &amp; games.</text>
     <path d="M56 230h36v4H56z" fill="#9bd075" shape-rendering="crispEdges"/>
   </g>
 </svg>

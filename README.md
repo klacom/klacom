@@ -1,42 +1,47 @@
-![klacom — web, mobile, and games, set in a pixel landscape inspired by my portfolio](assets/profile-banner.svg)
+![klacom — full-stack developer building for web, mobile, and games, set in a pixel landscape](assets/profile-banner.svg)
 
 # Hi, I'm Klarenz.
 
-**IT student building for the web, mobile, and games.**
+**Full-stack developer · 4th-year BS Information Technology at Pamantasan ng Lungsod ng Pasig (Class of 2027)**
 
-I'm **Klarenz Cobie Manrique**, a fourth-year BS Information Technology student at **Pamantasan ng Lungsod ng Pasig**, graduating in **2027**. I build full-stack apps, mobile tools, and games, and explore applied AI through projects that run on phones and support city services.
+I build web apps, APIs, and mobile clients end to end with Next.js, Node.js, Python, and Flutter, and ship them with Docker and AWS.
 
-Five years helping at a computer café taught me to troubleshoot calmly and explain technical problems clearly. I bring that same approach to the software I build.
+> [!IMPORTANT]
+> **Open to OJT internships · Dec 1, 2026 – Feb 13, 2027 · 486 hours**
+>
+> Onsite or hybrid in Metro Manila, or remote (UTC+8). I can start earlier once my school approves.
 
-**Taytay, Rizal, Philippines** · [Get in touch](mailto:klarenzcobie99@gmail.com)
+**[Portfolio](https://klarenzcom.vercel.app/)** · **[LinkedIn](https://www.linkedin.com/in/klarenz-cobie-899656392/)** · **[Resume (PDF)](https://klarenzcom.vercel.app/resume/Klarenz-Cobie-Manrique-Resume.pdf)** · **[Email](mailto:klarenzcobie99@gmail.com)**
+### Highlights
 
-## Selected builds
+- **Shipped a city service:** built EcoPin's web, mobile, backend, and ML features for **Pasig City's Solid Waste Management Office**.
+- **Won at a game jam:** **2nd place and People's Choice** at GameCon! Game Jam Manila 2025, as lead programmer.
+- **Hackathon finalist:** **top 12 of 280+ teams** at the AppBuildersPH Hackathon with an on-device AI keyboard.
 
-### EcoPin
+## Featured project
+
+### EcoPin — waste reporting and cleanup for Pasig City
 
 **Full-stack developer · Capstone project**
+`Next.js` `Express` `Supabase (PostgreSQL)` `Redis` `Flutter` `Python` `Docker` `AWS`
 
-A waste-reporting and cleanup platform built for Pasig City's Solid Waste Management Office. Residents report concerns on a map, while crews manage dispatch, cleanup evidence, and barangay analytics.
-
-- Built features across the web app, mobile app, and backend, including offline synchronization.
-- Wrote Python routing and forecasting services, added privacy controls, and automated AWS deployment pipelines.
-
-[Live demo](https://ecopin-web.vercel.app/) · [Web](https://github.com/baldopadua/ecopin-web) · [Mobile](https://github.com/klacom/ecopin_app) · [Backend](https://github.com/klacom/ecopin_backend_node) · [ML models](https://github.com/klacom/ecopin_ml_models)
-
-<details>
-<summary>See EcoPin</summary>
+Residents pin waste concerns on a map. City crews get dispatch, cleanup evidence, and barangay-level analytics.
 
 ![EcoPin home page with a map of Pasig and waste-report pins](assets/ecopin.webp)
 
-</details>
+- Built features across the Next.js web app, the mobile app, and the Express backend, including **offline sync**.
+- Wrote **Python services** for cleanup route optimization, hotspot forecasting, and report-photo validation (**92.8% test accuracy, 0.918 macro-F1**).
+- Added **privacy controls** and automated **deployment pipelines** to AWS with GitHub Actions and Docker.
 
-### Plooy
+[Live demo](https://ecopin-web.vercel.app/) · [Web](https://github.com/baldopadua/ecopin-web) · [Mobile](https://github.com/klacom/ecopin_app) · [Backend](https://github.com/klacom/ecopin_backend_node) · [ML services](https://github.com/klacom/ecopin_ml_models)
 
-**Lead programmer · GameCon! Game Jam Manila 2025**
+## Competition builds
 
-A team-built game developed in **Godot and GDScript**. I led the programming and developed the game's features.
+### Plooy — 2nd place and People's Choice, GameCon! Game Jam Manila 2025
 
-Our team won **2nd place** and received **People's Choice** recognition.
+**Lead programmer** · `Godot` `GDScript`
+
+A team-built game made within the jam. I led programming and built the game's core features.
 
 [Play on itch.io](https://artsaac.itch.io/plooy) · [Code](https://github.com/baldopadua/PLOOY)
 
@@ -47,13 +52,11 @@ Our team won **2nd place** and received **People's Choice** recognition.
 
 </details>
 
-### Tanggolin
+### Tanggolin — top 12 of 280+ teams, AppBuildersPH Hackathon
 
-**Programmer · AppBuildersPH Hackathon**
+**Programmer** · `Kotlin` `ONNX` `Android`
 
-An Android keyboard that uses on-device AI to catch sensitive information before it leaves the phone. I contributed **Kotlin keyboard logic** and integrated **quantized ONNX inference** to run the model locally.
-
-Our team was selected as **one of 12 finalists out of 280+ teams**.
+An Android keyboard that uses on-device AI to catch sensitive information before it leaves the phone. I wrote the **Kotlin keyboard logic** and integrated **quantized ONNX inference** so the model runs locally.
 
 [Code](https://github.com/baldopadua/App-Builders-Hackathon)
 
@@ -64,22 +67,35 @@ Our team was selected as **one of 12 finalists out of 280+ teams**.
 
 </details>
 
-## Tools I work with
+## More I've built
+
+| Project | What it is | Stack | Links |
+| --- | --- | --- | --- |
+| IBP Makati attendance | Attendance system built for the IBP Makati Chapter | Next.js, React, Tailwind CSS, Neon | [Code](https://github.com/klacom/ibp-makati-ulas) |
+| Pithos | E-commerce platform for buying and selling user-made assets | TypeScript | [Code](https://github.com/klacom/pithos) |
+| Pixel-world portfolio | My portfolio as a side-view pixel world, built on a custom tile engine | Next.js, TypeScript | [Live](https://klarenzcom.vercel.app/) · [Code](https://github.com/klacom/portfolio-mc) |
+
+## Tech stack
 
 | Area | Languages and tools |
 | --- | --- |
-| Web and backend | TypeScript, JavaScript, Next.js, Node.js, .NET |
-| Mobile | Kotlin, Flutter, Dart |
+| Frontend | TypeScript, JavaScript, React, Next.js, Tailwind CSS |
+| Backend and data | Node.js, Express, Python, .NET, PostgreSQL, Supabase, MySQL, Redis |
+| Mobile | Flutter, Dart, Kotlin |
+| Applied AI | ONNX, TensorFlow.js, Google OR-Tools |
+| DevOps | Docker, GitHub Actions, AWS EC2, AWS Lambda |
 | Games | Godot, GDScript, C#, Lua |
-| Data and applied AI | Python, PostgreSQL, MySQL, Supabase, ONNX, Google OR-Tools |
-| Deployment | AWS EC2, AWS Lambda, Docker, GitHub Actions |
+
+## How I work
+
+Five years helping at a computer café taught me to troubleshoot calmly and explain technical problems in plain words. I bring that to every team and codebase I join.
 
 ## Currently exploring
 
-- **Playable web experiences:** an interactive pixel-world portfolio built with Next.js and a custom tile engine.
 - **AI on ordinary phones:** quantized models and offline inference with ONNX.
 - **Routing and forecasting:** Python services for planning city cleanup work.
+- **Playable web experiences:** growing my pixel-world portfolio's custom tile engine.
 
-If you're building something in web, mobile, or games, I'd like to hear about it.
+---
 
-[klarenzcobie99@gmail.com](mailto:klarenzcobie99@gmail.com)
+**Hiring an OJT intern for December to February?** [Email me](mailto:klarenzcobie99@gmail.com) or [connect on LinkedIn](https://www.linkedin.com/in/klarenz-cobie-899656392/). I'd like to hear what your team is building.
