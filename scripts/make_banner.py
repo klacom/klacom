@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Render the animated profile banner (GIF) and the availability card (PNG).
+"""Render the animated profile banner as a GIF.
 
 The art follows the pixel world on klarenzcom.vercel.app: the same colour
 ramps, banded sky, sun, clouds, block textures and creatures. Everything is
 painted at native pixel resolution, scaled up with nearest-neighbour, and
 encoded with ffmpeg so the palette stays exact.
 
-    python scripts/make_banner.py                # writes assets/banner.gif and assets/availability.png
+    python scripts/make_banner.py                # writes assets/banner.gif
     python scripts/make_banner.py --preview DIR  # also writes the banner's first frame as a PNG
 """
 import argparse
@@ -585,45 +585,6 @@ def banner_frame(f, sky, terrain, text):
     return img.convert("RGB")
 
 
-# ------------------------------------------------------------------ availability card
-CARD_W, CARD_H = 400, 58
-GREEN = [hexc(c) for c in ("#1f6a2c", "#3fae4a", "#8ee07a", "#cdf5c0")]
-
-
-def card_frame(f):
-    img = Image.new("RGBA", (CARD_W, CARD_H), (0, 0, 0, 0))
-    d = ImageDraw.Draw(img)
-    d.fontmode = "1"
-    # A panel like the portfolio's buttons: light face, dark outline, hard shadow.
-    d.rectangle((2, 2, CARD_W - 1, CARD_H - 1), fill=(43, 40, 56, 255))
-    d.rectangle((0, 0, CARD_W - 3, CARD_H - 3), fill=(*INK, 255))
-    d.rectangle((1, 1, CARD_W - 4, CARD_H - 4), fill=(246, 243, 234, 255))
-    d.rectangle((1, 1, CARD_W - 4, 1), fill=(255, 255, 255, 255))
-    # Status light: an 8-pixel circle with a soft halo.
-    cx, cy = 14, 17
-
-    def disc(radius_rows, col):
-        for dy, half in radius_rows:
-            d.line((cx - half, cy + dy, cx + half - 1, cy + dy), fill=(*col, 255))
-
-    if f == 0:
-        disc([(-6, 2), (-5, 4), (-4, 5), (-3, 6), (-2, 6), (-1, 6), (0, 6), (1, 6), (2, 5), (3, 4), (4, 2)], GREEN[3])
-    disc([(-4, 2), (-3, 3), (-2, 4), (-1, 4), (0, 4), (1, 4), (2, 3), (3, 2)], GREEN[0])
-    disc([(-3, 2), (-2, 3), (-1, 3), (0, 3), (1, 3), (2, 2)], GREEN[1])
-    d.rectangle((cx - 2, cy - 2, cx - 1, cy - 1), fill=(*GREEN[2], 255))
-    big, small = ImageFont.truetype(str(FONT), 20), ImageFont.truetype(str(FONT), 10)
-    d.text((26, 6), "Open to OJT internships", font=big, fill=(*INK, 255))
-    d.text((26, 31), "Dec 1, 2026 – Feb 13, 2027 · can start earlier", font=small, fill=(*INK, 255))
-    d.text((26, 42), "Onsite or hybrid in Metro Manila, or remote (UTC+8)", font=small, fill=(86, 80, 104, 255))
-    # Hours on the right.
-    hours = "486"
-    hw = d.textlength(hours, font=big)
-    d.text((CARD_W - 16 - hw, 11), hours, font=big, fill=(*INK, 255))
-    lw = d.textlength("OJT hours", font=small)
-    d.text((CARD_W - 16 - lw, 36), "OJT hours", font=small, fill=(86, 80, 104, 255))
-    return img
-
-
 # ------------------------------------------------------------------ output
 def encode(frames, out, frame_ms):
     """Write frames to a looping GIF through ffmpeg's palette pass, with no dithering."""
@@ -647,7 +608,7 @@ def encode(frames, out, frame_ms):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--preview", metavar="DIR", type=Path, help="also save the first frame of each as PNG in DIR")
+    ap.add_argument("--preview", metavar="DIR", type=Path, help="also save the first frame as a PNG in DIR")
     args = ap.parse_args()
 
     sky, terrain, text = sky_layer(), terrain_layer(), text_layer()
@@ -656,10 +617,6 @@ def main():
         args.preview.mkdir(parents=True, exist_ok=True)
         banner[0].resize((W * SCALE, H * SCALE), Image.NEAREST).save(args.preview / "banner-preview.png")
     encode(banner, ASSETS / "banner.gif", FRAME_MS)
-    # The card stays still: GitHub overlays a play button on animated images, which would cover the hours.
-    card = card_frame(0).resize((CARD_W * SCALE, CARD_H * SCALE), Image.NEAREST)
-    card.save(ASSETS / "availability.png", optimize=True)
-    print(f"availability.png: {(ASSETS / 'availability.png').stat().st_size / 1024:.0f} KB")
 
 
 if __name__ == "__main__":
