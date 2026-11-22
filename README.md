@@ -1,100 +1,69 @@
-![klacom — full-stack developer building for web, mobile, and games, set in a pixel landscape](assets/profile-banner.svg)
+<img src="assets/banner.gif" width="100%" alt="Klarenz Cobie Manrique — full-stack developer for web, mobile, and games. A looping pixel landscape with drifting clouds, a pool, a grazing sheep, a wandering pig, a cherry blossom tree, and my pixel avatar in a blue sweatshirt.">
 
-# Hi, I'm Klarenz.
+<a href="mailto:klarenzcobie99@gmail.com"><img src="assets/availability.gif" width="100%" alt="Open to OJT internships: December 1, 2026 to February 13, 2027, 486 hours, and I can start earlier. Onsite or hybrid in Metro Manila, or remote (UTC+8)."></a>
 
-**Full-stack developer · 4th-year BS Information Technology at Pamantasan ng Lungsod ng Pasig (Class of 2027)**
-
-I build web apps, APIs, and mobile clients end to end with Next.js, Node.js, Python, and Flutter, and ship them with Docker and AWS.
-
-> [!IMPORTANT]
-> **Open to OJT internships · Dec 1, 2026 – Feb 13, 2027 · 486 hours**
->
-> Onsite or hybrid in Metro Manila, or remote (UTC+8). I can start earlier once my school approves.
+I'm a 4th-year BS Information Technology student at Pamantasan ng Lungsod ng Pasig (Class of 2027). I build web apps, APIs, and mobile clients end to end, and ship them with Docker and AWS. Five years helping at a computer café taught me to troubleshoot calmly and explain things plainly.
 
 **[Portfolio](https://klarenzcom.vercel.app/)** · **[LinkedIn](https://www.linkedin.com/in/klarenz-cobie-899656392/)** · **[Resume (PDF)](https://klarenzcom.vercel.app/resume/Klarenz-Cobie-Manrique-Resume.pdf)** · **[Email](mailto:klarenzcobie99@gmail.com)**
-### Highlights
 
-- **Shipped a city service:** built EcoPin's web, mobile, backend, and ML features for **Pasig City's Solid Waste Management Office**.
-- **Won at a game jam:** **2nd place and People's Choice** at GameCon! Game Jam Manila 2025, as lead programmer.
-- **Hackathon finalist:** **top 12 of 280+ teams** at the AppBuildersPH Hackathon with an on-device AI keyboard.
+## Featured projects
 
-## Featured project
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <a href="https://ecopin-web.vercel.app/"><img src="assets/projects/ecopin.webp" alt="EcoPin home page with a map of Pasig and waste-report pins"></a>
+      <br><b>EcoPin</b> · Full-stack developer
+      <br>Waste reporting and cleanup for Pasig City's Solid Waste Management Office.
+      <br><sub>Next.js · Express · Flutter · Python · AWS</sub>
+      <br><a href="https://ecopin-web.vercel.app/">Live demo</a> · <a href="https://github.com/klacom/ecopin_backend_node">Code</a>
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://artsaac.itch.io/plooy"><img src="assets/projects/plooy.webp" alt="Plooy title screen with its pixel-art logo against a space background"></a>
+      <br><b>Plooy</b> · Lead programmer
+      <br>2nd place and People's Choice at GameCon! Game Jam Manila 2025.
+      <br><sub>Godot · GDScript</sub>
+      <br><a href="https://artsaac.itch.io/plooy">Play</a> · <a href="https://github.com/baldopadua/PLOOY">Code</a>
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://github.com/baldopadua/App-Builders-Hackathon"><img src="assets/projects/tanggolin.webp" alt="Tanggolin's pangolin logo and the tagline: A second thought before you send"></a>
+      <br><b>Tanggolin</b> · Programmer
+      <br>Top 12 of 280+ teams at the AppBuildersPH Hackathon.
+      <br><sub>Kotlin · ONNX · on-device AI</sub>
+      <br><a href="https://github.com/baldopadua/App-Builders-Hackathon">Code</a>
+    </td>
+  </tr>
+</table>
 
-### EcoPin — waste reporting and cleanup for Pasig City
-
-**Full-stack developer · Capstone project**
-`Next.js` `Express` `Supabase (PostgreSQL)` `Redis` `Flutter` `Python` `Docker` `AWS`
-
-Residents pin waste concerns on a map. City crews get dispatch, cleanup evidence, and barangay-level analytics.
-
-![EcoPin home page with a map of Pasig and waste-report pins](assets/ecopin.webp)
-
-- Built features across the Next.js web app, the mobile app, and the Express backend, including **offline sync**.
-- Wrote **Python services** for cleanup route optimization, hotspot forecasting, and report-photo validation (**92.8% test accuracy, 0.918 macro-F1**).
-- Added **privacy controls** and automated **deployment pipelines** to AWS with GitHub Actions and Docker.
-
-[Live demo](https://ecopin-web.vercel.app/) · [Web](https://github.com/baldopadua/ecopin-web) · [Mobile](https://github.com/klacom/ecopin_app) · [Backend](https://github.com/klacom/ecopin_backend_node) · [ML services](https://github.com/klacom/ecopin_ml_models)
-
-## Competition builds
-
-### Plooy — 2nd place and People's Choice, GameCon! Game Jam Manila 2025
-
-**Lead programmer** · `Godot` `GDScript`
-
-A team-built game made within the jam. I led programming and built the game's core features.
-
-[Play on itch.io](https://artsaac.itch.io/plooy) · [Code](https://github.com/baldopadua/PLOOY)
-
-<details>
-<summary>See Plooy</summary>
-
-![Plooy title screen with its pixel-art logo, Start button, and Tutorial button against a space background](assets/plooy.webp)
-
-</details>
-
-### Tanggolin — top 12 of 280+ teams, AppBuildersPH Hackathon
-
-**Programmer** · `Kotlin` `ONNX` `Android`
-
-An Android keyboard that uses on-device AI to catch sensitive information before it leaves the phone. I wrote the **Kotlin keyboard logic** and integrated **quantized ONNX inference** so the model runs locally.
-
-[Code](https://github.com/baldopadua/App-Builders-Hackathon)
-
-<details>
-<summary>See Tanggolin</summary>
-
-![Tanggolin's pangolin logo and the tagline: A second thought before you send](assets/tanggolin.webp)
-
-</details>
-
-## More I've built
-
-| Project | What it is | Stack | Links |
-| --- | --- | --- | --- |
-| IBP Makati attendance | Attendance system built for the IBP Makati Chapter | Next.js, React, Tailwind CSS, Neon | [Code](https://github.com/klacom/ibp-makati-ulas) |
-| Pithos | E-commerce platform for buying and selling user-made assets | TypeScript | [Code](https://github.com/klacom/pithos) |
-| Pixel-world portfolio | My portfolio as a side-view pixel world, built on a custom tile engine | Next.js, TypeScript | [Live](https://klarenzcom.vercel.app/) · [Code](https://github.com/klacom/portfolio-mc) |
+<sub>Also built: <a href="https://github.com/klacom/ibp-makati-ulas">an attendance system for IBP Makati</a> · <a href="https://github.com/klacom/pithos">Pithos, an e-commerce platform</a> · <a href="https://github.com/klacom/portfolio-mc">my pixel-world portfolio</a></sub>
 
 ## Tech stack
 
-| Area | Languages and tools |
-| --- | --- |
-| Frontend | TypeScript, JavaScript, React, Next.js, Tailwind CSS |
-| Backend and data | Node.js, Express, Python, .NET, PostgreSQL, Supabase, MySQL, Redis |
-| Mobile | Flutter, Dart, Kotlin |
-| Applied AI | ONNX, TensorFlow.js, Google OR-Tools |
-| DevOps | Docker, GitHub Actions, AWS EC2, AWS Lambda |
-| Games | Godot, GDScript, C#, Lua |
-
-## How I work
-
-Five years helping at a computer café taught me to troubleshoot calmly and explain technical problems in plain words. I bring that to every team and codebase I join.
-
-## Currently exploring
-
-- **AI on ordinary phones:** quantized models and offline inference with ONNX.
-- **Routing and forecasting:** Python services for planning city cleanup work.
-- **Playable web experiences:** growing my pixel-world portfolio's custom tile engine.
+<table>
+  <tr>
+    <td><b>Frontend</b></td>
+    <td><img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,tailwind" height="40" alt="TypeScript, JavaScript, React, Next.js, Tailwind CSS"></td>
+  </tr>
+  <tr>
+    <td><b>Backend and data</b></td>
+    <td><img src="https://skillicons.dev/icons?i=nodejs,express,python,dotnet,postgres,supabase,mysql,redis" height="40" alt="Node.js, Express, Python, .NET, PostgreSQL, Supabase, MySQL, Redis"></td>
+  </tr>
+  <tr>
+    <td><b>Mobile</b></td>
+    <td><img src="https://skillicons.dev/icons?i=flutter,dart,kotlin" height="40" alt="Flutter, Dart, Kotlin"></td>
+  </tr>
+  <tr>
+    <td><b>DevOps</b></td>
+    <td><img src="https://skillicons.dev/icons?i=docker,githubactions,aws,vercel" height="40" alt="Docker, GitHub Actions, AWS, Vercel"></td>
+  </tr>
+  <tr>
+    <td><b>Applied AI</b></td>
+    <td><img src="https://skillicons.dev/icons?i=tensorflow" height="40" alt="TensorFlow"> &nbsp;ONNX · Google OR-Tools</td>
+  </tr>
+  <tr>
+    <td><b>Games</b></td>
+    <td><img src="https://skillicons.dev/icons?i=godot,cs,lua" height="40" alt="Godot, C#, Lua"></td>
+  </tr>
+</table>
 
 ---
 
