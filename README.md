@@ -1,6 +1,6 @@
 <img src="assets/banner.gif" width="100%" alt="Klarenz Cobie Manrique — full-stack developer for web, mobile, and games. A looping pixel landscape with drifting clouds, a pool, a grazing sheep, a wandering pig, a cherry blossom tree, and my pixel avatar in a blue sweatshirt.">
 
-<a href="mailto:klarenzcobie99@gmail.com"><img src="assets/availability.gif" width="100%" alt="Open to OJT internships: December 1, 2026 to February 13, 2027, 486 hours, and I can start earlier. Onsite or hybrid in Metro Manila, or remote (UTC+8)."></a>
+<a href="mailto:klarenzcobie99@gmail.com"><img src="assets/availability.png" width="100%" alt="Open to OJT internships: December 1, 2026 to February 13, 2027, 486 hours, and I can start earlier. Onsite or hybrid in Metro Manila, or remote (UTC+8)."></a>
 
 I'm a 4th-year BS Information Technology student at Pamantasan ng Lungsod ng Pasig (Class of 2027). I build web apps, APIs, and mobile clients end to end, and ship them with Docker and AWS. Five years helping at a computer café taught me to troubleshoot calmly and explain things plainly.
 
@@ -57,7 +57,7 @@ I'm a 4th-year BS Information Technology student at Pamantasan ng Lungsod ng Pas
   </tr>
   <tr>
     <td><b>Applied AI</b></td>
-    <td><img src="https://skillicons.dev/icons?i=tensorflow" height="40" alt="TensorFlow"> &nbsp;ONNX · Google OR-Tools</td>
+    <td><img src="https://skillicons.dev/icons?i=tensorflow" height="40" align="absmiddle" alt="TensorFlow"> &nbsp;ONNX · Google OR-Tools</td>
   </tr>
   <tr>
     <td><b>Games</b></td>

@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Render the animated profile banner and the availability card as GIFs.
+"""Render the animated profile banner (GIF) and the availability card (PNG).
 
 The art follows the pixel world on klarenzcom.vercel.app: the same colour
 ramps, banded sky, sun, clouds, block textures and creatures. Everything is
 painted at native pixel resolution, scaled up with nearest-neighbour, and
 encoded with ffmpeg so the palette stays exact.
 
-    python scripts/make_banner.py            # writes assets/banner.gif and assets/availability.gif
-    python scripts/make_banner.py --preview DIR  # also writes a PNG of the first frame of each
+    python scripts/make_banner.py                # writes assets/banner.gif and assets/availability.png
+    python scripts/make_banner.py --preview DIR  # also writes the banner's first frame as a PNG
 """
 import argparse
 import math
@@ -599,7 +599,7 @@ def card_frame(f):
     d.rectangle((0, 0, CARD_W - 3, CARD_H - 3), fill=(*INK, 255))
     d.rectangle((1, 1, CARD_W - 4, CARD_H - 4), fill=(246, 243, 234, 255))
     d.rectangle((1, 1, CARD_W - 4, 1), fill=(255, 255, 255, 255))
-    # Status light: an 8-pixel circle with a halo that pulses.
+    # Status light: an 8-pixel circle with a soft halo.
     cx, cy = 14, 17
 
     def disc(radius_rows, col):
@@ -652,13 +652,14 @@ def main():
 
     sky, terrain, text = sky_layer(), terrain_layer(), text_layer()
     banner = [banner_frame(f, sky, terrain, text) for f in range(FRAMES)]
-    card = [card_frame(f) for f in range(2)]
     if args.preview:
         args.preview.mkdir(parents=True, exist_ok=True)
         banner[0].resize((W * SCALE, H * SCALE), Image.NEAREST).save(args.preview / "banner-preview.png")
-        card[0].resize((CARD_W * SCALE, CARD_H * SCALE), Image.NEAREST).save(args.preview / "availability-preview.png")
     encode(banner, ASSETS / "banner.gif", FRAME_MS)
-    encode(card, ASSETS / "availability.gif", 700)
+    # The card stays still: GitHub overlays a play button on animated images, which would cover the hours.
+    card = card_frame(0).resize((CARD_W * SCALE, CARD_H * SCALE), Image.NEAREST)
+    card.save(ASSETS / "availability.png", optimize=True)
+    print(f"availability.png: {(ASSETS / 'availability.png').stat().st_size / 1024:.0f} KB")
 
 
 if __name__ == "__main__":
